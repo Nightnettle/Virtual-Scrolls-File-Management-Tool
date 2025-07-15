@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #34495e; -fx-padding: 50px;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vsas.controller.LoginController">
+    <VBox.margin>
+        <Insets top="20" />
+    </VBox.margin>
+    <TextField fx:id="useridField" prefHeight="40" prefWidth="300" promptText="User ID" style="-fx-font-size: 14px;" />
+   <PasswordField fx:id="passwordField" prefHeight="40.0" prefWidth="300.0" promptText="Password" style="-fx-font-size: 14px;" />
+    <Button onAction="#loginOnAction" prefHeight="50" prefWidth="300" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 16px; -fx-border-radius: 10; -fx-background-radius: 10;" text="Login" />
+</VBox>

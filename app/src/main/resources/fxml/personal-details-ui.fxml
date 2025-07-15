@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="330.0" style="-fx-background-color: #1f2d33;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vsas.controller.UpdatePersonalDetailsController">
+   <children>
+      <Label layoutX="30.0" layoutY="8.0" text="Update Personal Details" textFill="#ff6f09">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="51.0" text="User ID:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="104.0" prefHeight="26.0" prefWidth="66.0" text="Full Name:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="170.0" text="Email Address:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="233.0" text="Phone Number:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="useridField" layoutX="22.0" layoutY="71.0" prefHeight="26.0" prefWidth="287.0" style="-fx-background-color: #596a7d;" />
+      <TextField fx:id="fullNameField" layoutX="22.0" layoutY="130.0" prefHeight="26.0" prefWidth="287.0" style="-fx-background-color: #596a7d;" />
+      <TextField fx:id="emailField" layoutX="21.0" layoutY="190.0" prefHeight="26.0" prefWidth="287.0" style="-fx-background-color: #596a7d;" />
+      <TextField fx:id="phoneNumberField" layoutX="22.0" layoutY="253.0" prefHeight="26.0" prefWidth="287.0" style="-fx-background-color: #596a7d;" />
+      <Button layoutX="18.0" layoutY="332.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="53.0" prefWidth="140.0" style="-fx-background-color: #366f87;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="169.0" layoutY="332.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="53.0" prefWidth="140.0" style="-fx-background-color: #db4f40;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label disable="true" layoutX="99.0" layoutY="295.0" text="Update status message" textFill="#b7a5a5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

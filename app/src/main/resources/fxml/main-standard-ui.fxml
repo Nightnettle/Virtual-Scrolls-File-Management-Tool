@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="580.0" style="-fx-background-color: #9ca5ba;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vsas.controller.MainStandardUIController">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="137.0" style="-fx-background-color: #1f2d33;">
+         <children>
+            <Label layoutX="35.0" layoutY="14.0" text="VSAS " textFill="#ff3a3a">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="57.0" text="Logged In As:" textFill="WHITE" />
+            <Label fx:id="usernameLabel" layoutX="13.0" layoutY="75.0" text="Username" textFill="#0f9fff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="103.0" text="Account Type:" textFill="WHITE" />
+            <Label fx:id="accountTypeLabel" layoutX="13.0" layoutY="118.0" text="Account type" textFill="#b780d7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="logout" layoutX="8.0" layoutY="406.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #366f87;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="366.0" mnemonicParsing="false" onAction="#settingsOnAction" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #637bb8;" text="Settings" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GEAR" size="20" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </graphic>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </Button>
+            <Label fx:id="uidLabel" layoutX="13.0" layoutY="341.0" text="UID" textFill="#8899a4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="addScrollsButton" layoutX="154.0" layoutY="65.0" mnemonicParsing="false" onAction="#addScrollOnAction" prefHeight="106.0" prefWidth="120.0" style="-fx-background-color: #088c78; -fx-effect: dropshadow(three-pass-box, rgba(16, 40, 123, 0.2), 0px, 0px, 4px, 4px);;">
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="60" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </graphic></Button>
+      <Button fx:id="editScrollsButton" layoutX="290.0" layoutY="65.0" mnemonicParsing="false" onAction="#editScrollOnAction" prefHeight="106.0" prefWidth="120.0" style="-fx-background-color: #c93d06; -fx-effect: dropshadow(three-pass-box, rgba(16, 40, 123, 0.2), 0px, 0px, 4px, 4px);">
+         <graphic>
+            <FontAwesomeIconView glyphName="EDIT" size="60" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </graphic>
+      </Button>
+      <Button fx:id="removeScrollsButton" layoutX="425.0" layoutY="65.0" mnemonicParsing="false" onAction="#removeScrollOnAction" prefHeight="106.0" prefWidth="120.0" style="-fx-background-color: #c20638; -fx-effect: dropshadow(three-pass-box, rgba(16, 40, 123, 0.2), 0px, 0px, 4px, 4px);">
+         <graphic>
+            <FontAwesomeIconView glyphName="TRASH" size="60" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </graphic>
+      </Button>
+      <Button fx:id="viewScrollsButton" layoutX="154.0" layoutY="271.0" mnemonicParsing="false" onAction="#viewScrollOnAction" prefHeight="106.0" prefWidth="120.0" style="-fx-background-color: #046991; -fx-effect: dropshadow(three-pass-box, rgba(16, 40, 123, 0.2), 0px, 0px, 4px, 4px);">
+         <graphic>
+            <FontAwesomeIconView glyphName="EYE" size="60" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </graphic>
+      </Button>
+      <Label fx:id="addScrollsLabel" layoutX="177.0" layoutY="180.0" text="Add Scrolls">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="editScrollsLabel" layoutX="313.0" layoutY="180.0" prefHeight="20.0" prefWidth="74.0" text="Edit Scrolls" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="removeScrollsLabel" layoutX="435.0" layoutY="180.0" text="Remove Scrolls">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="138.0" layoutY="208.0" prefHeight="4.0" prefWidth="441.0" />
+      <Label layoutX="174.0" layoutY="386.0" text="View Scrolls">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="264.0" text="Manage Scrolls">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="212.0" text="Scroll Seeker">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="manageUsersButton" layoutX="290.0" layoutY="271.0" mnemonicParsing="false" onAction="#manageUsersOnAction" prefHeight="106.0" prefWidth="120.0" style="-fx-background-color: #92b304; -fx-effect: dropshadow(three-pass-box, rgba(16, 40, 123, 0.2), 0px, 0px, 4px, 4px);">
+         <graphic>
+            <FontAwesomeIconView glyphName="USER" size="60" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </graphic>
+      </Button>
+      <Button fx:id="statisticsButton" layoutX="425.0" layoutY="271.0" mnemonicParsing="false" onAction="#scrollStatisticsOnAction" prefHeight="106.0" prefWidth="120.0" style="-fx-background-color: #8404b3; -fx-effect: dropshadow(three-pass-box, rgba(16, 40, 123, 0.2), 0px, 0px, 4px, 4px);">
+         <graphic>
+            <FontAwesomeIconView glyphName="BAR_CHART" size="60" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </graphic>
+      </Button>
+      <Label fx:id="manageUsersLabel" layoutX="303.0" layoutY="386.0" text="Manage Users" textFill="#d40000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="statisticsLabel" layoutX="435.0" layoutY="386.0" text="Scroll Statistics" textFill="#d40000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

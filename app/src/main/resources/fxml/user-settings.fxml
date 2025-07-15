@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="250.0" prefWidth="300.0" style="-fx-background-color: #1f2d33;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vsas.controller.UserSettingsController">
+   <children>
+      <Label layoutX="75.0" layoutY="6.0" text="User Settings" textFill="#ff5100">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="36.0" layoutY="80.0" mnemonicParsing="false" onAction="#updateDetailsOnAction" prefHeight="62.0" prefWidth="227.0" style="-fx-background-color: #366f87;" text="Update Personal Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="36.0" layoutY="159.0" mnemonicParsing="false" onAction="#changePasswordOnAction" prefHeight="62.0" prefWidth="227.0" style="-fx-background-color: #75053b;" text="Change Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

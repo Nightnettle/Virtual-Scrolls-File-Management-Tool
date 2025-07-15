@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vsas.controller.ManageUsersController">
+   <children>
+      <Label layoutX="220.0" layoutY="14.0" text="Manage Users">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="userList" layoutX="20.0" layoutY="91.0" prefHeight="298.0" prefWidth="319.0" />
+      <Button layoutX="379.0" layoutY="360.0" mnemonicParsing="false" text="Add User" />
+      <Button layoutX="464.0" layoutY="360.0" mnemonicParsing="false" text="Delete User" />
+      <TextField layoutX="354.0" layoutY="118.0" prefHeight="26.0" prefWidth="225.0" />
+      <TextField layoutX="354.0" layoutY="187.0" prefHeight="26.0" prefWidth="226.0" />
+      <TextField layoutX="354.0" layoutY="259.0" prefHeight="26.0" prefWidth="226.0" />
+      <Label layoutX="354.0" layoutY="86.0" text="User ID:" />
+      <Label layoutX="354.0" layoutY="161.0" text="Full Name" />
+      <Label layoutX="354.0" layoutY="226.0" text="User Type" />
+      <Label layoutX="128.0" layoutY="63.0" text="List of Users">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
